@@ -1,0 +1,25 @@
+<view>
+  <view class='infoImg'>
+    <image src="../../resources/swiper1.jpg" />
+  </view>
+  <view class='infoCont'>
+    <view class='infopanel'>
+      <view>
+        <view class='nameTitle'>{{name}}</view>
+        <view class='nameTag'>城区诊所</view>
+      </view>
+      <view class='j-list border-b'>
+        <view class='j-list-lf'>咨询电话：{{phone}}</view>
+      </view>
+      <view class='j-list'>
+        <view class='j-list-lf'>医院地址：{{address}}</view>
+      </view>
+    </view>
+    <i-panel>
+      <view class='panTitle'>
+        <view class='titleName'>简介</view>
+      </view>
+      <view class='infoText'>{{intro}}</view>
+    </i-panel>
+  </view>
+</view>

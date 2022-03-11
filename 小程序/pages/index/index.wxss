@@ -1,0 +1,247 @@
+/**index.wxss**/
+/* 轮播图 */
+swiper {
+  height: 350rpx;
+  /* margin:  8rpx 0; */
+}
+
+swiper-item {
+  box-sizing: border-box;
+  /* padding: 0 6rpx; */
+}
+
+.swiper-image {
+  width: 100%;
+  height: 350rpx;
+  /* border-radius: 12rpx; */
+}
+
+/* 导航 */
+.navigation {
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*超出的部分分行处理*/
+}
+
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-self: center;
+  /* 居中 */
+  align-items: center;
+  /*内容居中*/
+  justify-content: center;
+  /*上下居中*/
+  font-size: 28rpx;
+}
+
+.navigationList .image {
+  background-color: #00978d96;
+  border-radius: 50%;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.navigationList image {
+  margin: 15rpx 13rpx;
+}
+
+.fenlei_2 {
+  display: flex;
+  align-items: center;
+  /*内容居中*/
+  flex-direction: column;
+}
+
+/* 分割线 */
+.fenge {
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* 居中 */
+  align-items: center;
+  /*内容居中 */
+  justify-content: center;
+  /*上下居中*/
+}
+
+.line {
+  width: 100%;
+  height: 5rpx;
+  margin-top: 5rpx;
+  background-color: #00978d96;
+}
+
+/* 疫情 */
+.epidemicBox {
+  width: 90%;
+  height: 510rpx;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  /* background: #fff; */
+  border-radius: 32rpx;
+  box-shadow: 0 4rpx 40rpx rgb(0 0 0 / 10%);
+}
+
+.epidemicBox view {
+  display: block;
+}
+
+.cover_tabs {
+  overflow: hidden;
+  border-top-left-radius: 32rpx;
+  border-top-right-radius: 32rpx;
+}
+
+.cover_tab {
+  float: left;
+  width: 50%;
+  height: 80rpx;
+  font-size: 26rpx;
+  color: #333;
+  text-align: center;
+  line-height: 80rpx;
+  background: #f1f1f1;
+  /* padding-left: 35rpx;
+  box-sizing: border-box; */
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+/* 数据 */
+.cover_data_china,
+.cover_data_gd {
+  position: relative;
+  padding-top: 34rpx;
+}
+
+.cover_confirm,
+.cover_dead,
+.cover_heal,
+.cover_input,
+.cover_nosymptom,
+.cover_province_confirm,
+.cover_province_dead,
+.cover_province_heal,
+.cover_severe,
+.cover_suspect,
+.cover_today_confirm {
+  float: left;
+  position: relative;
+  width: 33.3%;
+  min-height: 116rpx;
+  margin-bottom: 34rpx;
+  /* background-color: blanchedalmond; */
+}
+
+.cover_time {
+  clear: both;
+  padding: 0 0 22rpx;
+  margin: 0rpx 32rpx;
+  font-size: 24rpx;
+  color: #a9a9a9;
+  font-weight: 400;
+  /* 固定在底部 */
+  position: absolute;
+  /* bottom: 35rpx; */
+  margin-top: 350rpx;
+}
+
+.topWord {
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.number {
+  font: 700 44rpx/74rpx DIN Alternate, din_alternate_bold, -apple-system-font, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial;
+  text-align: center;
+}
+
+.input-number,
+.cover_input text {
+  color: #ffa352;
+}
+
+.confirm-number,
+.cover_confirm text {
+  color: #a31d13;
+}
+
+.dead-number,
+.cover_dead text {
+  color: #333;
+}
+
+.heal-number,
+.cover_heal text {
+  color: #34aa70;
+}
+
+.nosymptom-number,
+.cover_nosymptom text {
+  color: #791618;
+}
+
+.today_confirm-number,
+.cover_today_confirm text {
+  color: #e44a3d;
+}
+
+.added {
+  display: none;
+  font: 28rpx/1 -apple-system-font, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial;
+  color: #999;
+  text-align: center;
+}
+
+/* 公告 */
+.notice {
+  width: 90%;
+  margin: 25rpx auto;
+  line-height: 32rpx;
+  font-size: 28rpx;
+  color: #2B333B;
+  font-weight: bold;
+  min-height: 300rpx;
+}
+
+.notice-line {
+  position: absolute;
+  width: 8rpx;
+  height: 32rpx;
+  border-radius: 4rpx;
+  background: #00978E;
+  /* left: 90rpx;
+  bottom: 20rpx; */
+}
+
+.notice-title {
+  margin-left: 20rpx;
+  color: #00978E;
+}
+
+.notice-list {
+  display: block;
+  padding: 24rpx 40rpx 36rpx;
+  background-color: #f4f4f4;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+}
+
+.notice-more {
+  position: relative;
+  padding-right: 26rpx;
+  font: 24rpx/24rpx -apple-system-font, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial;
+  color: #999;
+  margin-top: 30rpx;
+}

@@ -1,0 +1,21 @@
+<!--pages/map/map.wxml-->
+
+<!-- 这是地图部分 -->
+
+<view class="map_container">
+  <map class='map' longitude='{{longitude}}' latitude='{{latitude}}' scale='{{scale}}' markers='{{markers}}' bindcontroltap="bindcontroltap" polyline='{{polyline}}' circles="{{circles}}" bindmarkertap='bindmarkertap' bindcontroltap='bindcontroltap' show-location></map>
+
+  <!-- <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;">
+  </map> -->
+
+</view>
+
+<!-- 以下是导航部分 -->
+<view class='list-guide'>
+  <!-- 这里的坐标本应该是从服务器获取数据的,这时丈先写死在页面上了 -->
+  <view bindtap="onGuideTap" data-latitude='{{latitude}}' data-longitude='{{longitude}}' data-bankName='诊所'>
+    <!-- <image src='/images/banklist/daohang.png' class='list-guide-imgae'></image> -->
+    <text class='list-guide-text'>导航</text>
+  </view>
+
+</view>

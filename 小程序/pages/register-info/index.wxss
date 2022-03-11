@@ -1,0 +1,45 @@
+.view-contain-ti {
+  display: flex;
+  height: 70rpx;
+  margin: 20px;
+  border: 3rpx solid #00978E;
+  border-radius: 10rpx;
+}
+
+.text-ti {
+  position: absolute;
+  font-size: 12px;
+  background: white;
+  margin: -10px 0 0 10px;
+  padding: 0 5px;
+  color: rgb(144, 147, 167);
+}
+
+.input {
+  margin:  auto 10px;
+  font-size: 32rpx;
+}
+.input-date{
+  line-height: 70rpx;
+}
+.subBtn{
+  background-color: red;
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+/* 支付 */
+.pay-box{
+  width: 100%;
+  height: 80rpx;
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 4rpx 40rpx rgb(0 0 0 / 10%);
+}
+.pay-box view{
+  text-align: center;
+  font-size: 34rpx;
+  color: #00978E;
+  line-height: 80rpx;
+}

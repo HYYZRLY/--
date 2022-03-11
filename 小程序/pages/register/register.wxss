@@ -1,0 +1,98 @@
+page {
+  height: 100%;
+}
+
+.fenlei {
+  height: calc(100vh-90rpx);
+  display: flex;
+}
+
+.left_menu {
+  /* 子项 高度100% flex */
+  flex: 2;
+  /* background-color: rosybrown; */
+
+}
+
+.menu_item {
+  height: 80rpx;
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+  /* 字体大小 */
+  font-size: 30rpx;
+  color: rgb(133, 130, 130);
+}
+
+.active {
+  color: #00978E;
+  border-left: 5rpx solid currentColor;
+}
+
+.fenlei_left1 {
+  display: flex;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.line {
+  /* color: var(--themeColor); */
+  height: 100vh;
+  border: 2rpx solid rgb(196, 193, 193);
+}
+
+.rigt_choice {
+  flex: 6;
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+}
+
+.right_item1 {
+  display: flex;
+  margin-top: 16rpx;
+  border-bottom: 1rpx solid #D9DDE1;
+}
+
+.img {
+  width: 180rpx;
+  height: 230rpx;
+  margin-bottom: 5px;
+  border-radius: 16rpx;
+}
+
+.product-item-content {
+  flex: 1;
+  margin-left: 24rpx;
+  margin-right: 40rpx;
+  padding-top: 40rpx;
+}
+
+.product-item-name {
+  line-height: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #2B333B;
+}
+
+.product-item-price {
+  margin-top: 5px;
+  font-size: 28rpx;
+  color: #71777D;
+}
+
+.product-item-inventory,
+.product-item-title {
+  margin-top: 5px;
+  font-size: 28rpx;
+  color: #71777D;
+  /* 超出省略 */
+  width: 300rpx;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,130 @@
+<!--index.wxml-->
+<swiper circular="{{true}}" autoplay="{{true}}" class="swiper">
+  <swiper-item wx:for="{{swiperList}}" class="swiper-item" wx:key="*this">
+    <image class="swiper-image" src="{{item.imgUrl}}" />
+  </swiper-item>
+</swiper>
+
+<!-- 导航栏  开始 -->
+<view class="navigation">
+  <view wx:for="{{navigation}}" wx:key="_id" class="navigationList">
+    <navigator url="{{item.url}}" class="fenlei_2">
+      <view class="image">
+        <image src="{{item.src}}" style="width:45rpx; height:45rpx"></image>
+      </view>
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <!-- 分割线 -->
+  <view class="line"></view>
+</view>
+
+<!-- 疫情 -->
+<view class="epidemicBox">
+  <!-- 顶部 -->
+  <view class="cover_tabs">
+    <view class="cover_tab {{type === 'china' ? 'active': ''}}" bindtap="changeType" data-type="china">全国疫情数据(含港澳台)</view>
+    <view class="cover_tab {{type === 'gd' ? 'active': ''}}" bindtap="changeType" data-type="gd">广东疫情数据</view>
+  </view>
+  <!-- 数据 -->
+  <view class="cover_data_china" wx:if="{{type === 'china'}}">
+    <!-- 境外输入 -->
+    <view class="cover_input">
+      <view class="topWord">境外输入</view>
+      <view class="number input-number">{{total.input}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{today.input}}</text></view>
+      </view>
+    </view>
+    <!-- 无症状感染 -->
+    <view class="cover_nosymptom">
+      <view class="topWord">无症状感染者</view>
+      <view class="number nosymptom-number">{{extData.noSymptom}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{extData.incrNoSymptom}}</text></view>
+      </view>
+    </view>
+    <!-- 现有确诊 -->
+    <view class="cover_today_confirm">
+      <view class="topWord">现有确诊</view>
+      <view class="number today_confirm-number">{{total.confirm-total.dead-total.heal}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{today.storeConfirm}}</text></view>
+      </view>
+    </view>
+    <!-- 累计确诊 -->
+    <view class="cover_confirm">
+      <view class="topWord">累计确诊</view>
+      <view class="number confirm-number">{{total.confirm}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{today.confirm}}</text></view>
+      </view>
+    </view>
+    <!-- 累计死亡 -->
+    <view class="cover_dead">
+      <view class="topWord">累计死亡</view>
+      <view class="number dead-number">{{total.dead}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{today.dead}}</text></view>
+      </view>
+    </view>
+    <!-- 累计治愈 -->
+    <view class="cover_heal">
+      <view class="topWord">累计治愈</view>
+      <view class="number heal-number">{{total.heal}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{today.heal}}</text></view>
+      </view>
+    </view>
+    <!-- 底部截至时间 -->
+    <view class="cover_time">
+      截至 {{lastUpdateTime}}
+    </view>
+  </view>
+
+  <!-- 广东数据 -->
+  <view class="cover_data_gd" wx:if="{{type === 'gd'}}">
+    <!-- 累计确诊 -->
+    <view class="cover_confirm">
+      <view class="topWord">累计确诊</view>
+      <view class="number confirm-number">{{gdTotal.confirm}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{gdToday.confirm}}</text></view>
+      </view>
+    </view>
+    <!-- 累计死亡 -->
+    <view class="cover_dead">
+      <view class="topWord">累计死亡</view>
+      <view class="number dead-number">{{gdTotal.dead}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{gdToday.dead}}</text></view>
+      </view>
+    </view>
+    <!-- 累计治愈 -->
+    <view class="cover_heal">
+      <view class="topWord">累计治愈</view>
+      <view class="number heal-number">{{gdTotal.heal}}</view>
+      <view class="added" style="display: block;">
+        <view>较昨日<text>+{{gdToday.heal}}</text></view>
+      </view>
+    </view>
+    <!-- 底部截至时间 -->
+    <view class="cover_time">
+      截至 {{lastUpdateTime}}
+    </view>
+  </view>
+</view>
+
+<!-- 公告 -->
+<view class="notice">
+  <view class="notice-line"></view>
+  <view class="notice-title">公告</view>
+  <view class="notice-ul" wx:for="{{notice}}" wx:key="_id">
+    <view class="notice-list">
+    {{item.title}}
+    <!-- <view class="notice-more">查看详情</view> -->
+    <view >
+    </view>
+    </view>
+  </view>
+</view>

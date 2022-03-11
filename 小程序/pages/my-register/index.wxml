@@ -1,0 +1,20 @@
+<view class="notice">
+  <view class="notice-ul">
+    <view class="notice-list" wx:for="{{registerList}}" wx:key="_id">
+      <view>
+        <view class="pay box">{{item.payStatus}}</view>
+        <view class="medical box">{{item.medicalStatus}}</view>
+        <view class="add_time">{{item.add_time}}</view>
+      </view>
+      <view class="line"></view>
+      <view class="message-box">
+        <view>医生：{{item.iDoctor}}</view>
+        <view>科室：{{item.iDepartment}}（详细地址请到科室页面查看）</view>
+        <view>就诊时间：{{item.register_time}} {{item.week}} {{item.time}}</view>
+        <!-- <view>科室地址：详细地址请到科室页面查看</view> -->
+        <view class="message-notice">注意：预约者无需到挂号处挂号，请携带遍历本提前到导诊台报到，叫号就诊</view>
+        <view class="message-pay box" bindtap="cancel" data-id="{{item._id}}" data-doId="{{item.doId}}">取消预约</view>
+      </view>
+    </view>
+  </view>
+</view>

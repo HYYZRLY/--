@@ -1,0 +1,34 @@
+<view class="imgBox">
+  <image src="{{doctor_pic}}" class="img"></image>
+</view>
+
+<view class="content">
+  <view class="doctor t">{{doctor}}</view>
+  <view class="departmentBox">
+    <view class="titles">{{titles}}</view>
+    <view class="department">{{department}}</view>
+  </view>
+  <view class="introductionBox">
+    <view class="t2 t">个人简介</view>
+    <view class="introduction">{{introduction}}</view>
+  </view>
+  <view class="timeBox">
+    <view class="t2 t">出诊时间</view>
+    <view wx:for="{{rosterData}}" wx:key="_id">
+      <view class="week">
+        {{item.week}}
+        <span>{{item.time}}</span>
+      </view>
+      <view class="num">
+        剩余挂号数：{{item.total-item.registrationNum}}
+      </view>
+      <navigator url="/pages/register-info/index?_time={{item._id}}">
+        <view class="register" bindtap="register" data-time="{{item._id}}">
+          点击预约
+        </view>
+      </navigator>
+
+    </view>
+
+  </view>
+</view>

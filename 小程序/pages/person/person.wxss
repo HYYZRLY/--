@@ -1,0 +1,142 @@
+/* 背景 */
+page{
+  background-color: rgb(236, 231, 223);
+}
+.user_info_wrap{
+  height: 45vh;
+  font-size: 28rpx;
+  /* background-color: var(--themeColor); */
+} 
+ .user_img_wrap{
+  /* height: 50vh; */
+  /* 高斯模糊 */
+   /* filter: blur(8rpx); */
+   /* 外相内绝 外层图片容器相对定位 */
+   position: relative;
+} 
+.user_bg{
+  height: 45vh;
+  width: 100%;
+  /* 高斯模糊 */
+  filter: blur(10rpx);
+}
+.user_info{
+  /* 外相内绝 内层用户信息绝对定位 */
+  position: absolute;
+  /* 水平居中 */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  /* 文字水平居中 */
+  text-align: center;
+}
+/* 头像 */
+.user_icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+/* 昵称 */
+.user_name{
+  color: #fff;
+  /* 顶距 */
+  margin-top: 40rpx;
+  /* 字体大小 */
+  font-size: 36rpx;
+}
+/* 登录按钮 */
+.user_btn{
+  position: absolute;
+  /* 水平居中 */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  /* 边框 */
+  border: 1rpx solid #00978E;
+  /* 字体颜色、大小 */
+  color: #00978E;
+  font-size: 38rpx;
+  padding: 26rpx;
+  border-radius: 20rpx;
+}
+.user_zb{
+  position: absolute;
+  /* width: 100%; */
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin-left: 150rpx; */
+  top: 20%;
+  font-size: 34rpx;
+}
+.user_xqx{
+  position: absolute;
+  /* width: 100%; */
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00978E;
+  font-size: 30rpx;
+}
+
+.user_content{
+  /* 外相内绝 */
+  position: relative;
+}
+.user_main{
+  color: #666;
+  position: absolute;
+  width: 50%;
+  /* 水平居中 */
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+}
+/* 历史足迹条目 */
+.history_wrap{
+  background-color: #fff;
+  display: flex;
+}
+/* 链接 */
+.hist_btn{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.hist_nun{
+  color: #00978E;
+}
+
+.us_content{
+  /* 外相内绝 */
+  position: relative;
+}
+.us_main{
+  color: #666;
+  position: absolute;
+  width: 96%;
+  /* 水平居中 */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80rpx;
+}
+/* 应用信息相关 */
+.app_info_wrap{
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.app_info_item{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.arrow{
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+}
+
+/* 小程序推荐 */
+.app_recommend_wrap{
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}

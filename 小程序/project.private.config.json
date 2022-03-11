@@ -1,0 +1,84 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/person/person",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预约",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "各医生",
+          "pathName": "pages/doctor-detial/doctor-detial",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "医生",
+          "pathName": "pages/doctor/doctor",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "科室信息",
+          "pathName": "pages/department/department",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "map",
+          "pathName": "pages/map/map",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预约信息",
+          "pathName": "pages/register-info/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的预约",
+          "pathName": "pages/my-register/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "反馈",
+          "pathName": "pages/suggestion/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

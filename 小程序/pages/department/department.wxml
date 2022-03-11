@@ -1,0 +1,24 @@
+<view class="fenlei">
+  <!-- 左侧分类 -->
+  <scroll-view scroll-y class="left_menu" data-name="{{item._id}}">
+    <view wx:for="{{departmentList}}" wx:key="_id" class="menu_item {{item._id===menu_now?'active':''}}" bindtap="get_fenlei" data-name="{{item._id}}">
+      {{item.department}}
+    </view>
+  </scroll-view>
+  <view class="line"></view>
+  <!-- 右侧数据 -->
+  <scroll-view scroll-y class="rigt_choice">
+    <view class="right_item">
+      <view class="right_item1" wx:for="{{departmentData}}" wx:key="_id">
+        <view class="introduction">
+          <view class="t">科室介绍</view>
+          {{item.introduction}}
+        </view>
+        <view class="addr">
+          <view class="t">科室地址</view>
+          {{item.department_addr}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

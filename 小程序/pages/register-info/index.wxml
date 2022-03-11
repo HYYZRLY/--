@@ -1,0 +1,42 @@
+<view>
+  <view class="view-contain-ti">
+    <text class="text-ti name">就诊人</text>
+    <input value="{{name}}" class="input-name input" bind:input="nameChange"></input>
+  </view>
+  <view class="view-contain-ti">
+    <text class="text-ti personalId">身份证号码</text>
+    <input value="{{personalId}}" class="input-tel input" bind:input="idChange"></input>
+  </view>
+  <view class="view-contain-ti">
+    <text class="text-ti tel">电话</text>
+    <input value="{{tel}}" class="input-tel input" bind:input="telChange"></input>
+  </view>
+  <view class="view-contain-ti">
+    <text class="text-ti doctor">预约医生</text>
+    <input value="{{doctor}}" class="input-age input" disabled='true'></input>
+  </view>
+  <view class="view-contain-ti">
+    <text class="text-ti department">就诊科室</text>
+    <input value="{{department}}" class="input-age input" disabled='true'></input>
+  </view>
+  <view class="view-contain-ti">
+    <text class="text-ti date">就诊时段</text>
+    <input value="{{roster.week}}-{{roster.time}}" class="input-age input"></input>
+  </view>
+  <view class="view-contain-ti">
+    <text class="text-ti date">选择时间</text>
+    <picker mode="date" value="{{register_time}}" start="2022-01-01" bindchange="dateChange">
+      <input value="{{register_time}}" class="input-date input" bind:input="dateChange"></input>
+    </picker>
+
+  </view>
+  <view>
+    <!-- <navigator url="../person/person" open-type="switchTab"> -->
+      <button class="subBtn" bindtap="submit">提交并支付</button>
+    <!-- </navigator> -->
+  </view>
+</view>
+
+<view wx:if="{{paied}}" class="pay-box" bindtap="pay">
+  <view>使用微信支付</view>
+</view>

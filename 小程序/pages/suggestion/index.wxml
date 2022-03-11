@@ -1,0 +1,15 @@
+<view class='father_view'>
+
+  <view class='son_view'>
+
+    <view class="title-bg">感谢您提出的宝贵意见和建议</view>
+    <view class="title-bg">我们会根据您的留言作出完善</view>
+    <textarea class="textarea-bg" placeholder="请输入内容" bind:input="getDataBindTap" auto-height maxlength="1000"></textarea>
+
+  </view>
+
+  <view class="btn blue" bindtap="refer">
+    <text>提交</text>
+  </view>
+
+</view>

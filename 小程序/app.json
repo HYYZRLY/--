@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/person",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/hospital/hospital",
+    "pages/doctor/doctor",
+    "pages/department/department",
+    "pages/doctor-detial/doctor-detial",
+    "pages/map/map",
+    "pages/register-info/index",
+    "pages/my-register/index",
+    "pages/my-form/index",
+    "pages/suggestion/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00978E",
+    "navigationBarTitleText": "诊所预约小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#2B333B",
+    "selectedColor": "#fff",
+    "backgroundColor": "#00978E",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./resources/index.png",
+        "selectedIconPath": "./resources/index-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/register/register",
+        "iconPath": "./resources/register.png",
+        "selectedIconPath": "./resources/register-active.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/hospital/hospital",
+        "iconPath": "./resources/hospital.png",
+        "selectedIconPath": "./resources/hospital-active.png",
+        "text": "诊所信息"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "./resources/my.png",
+        "selectedIconPath": "./resources/my-active.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}
