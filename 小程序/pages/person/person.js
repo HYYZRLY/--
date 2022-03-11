@@ -11,9 +11,6 @@ Page({
   },
   // 页面显示
   onShow: function(){
-    // const userInfo=wx.getUserProfile("user");
-    // console.log("userinfo");
-    // console.log(app.globaData);
     const uid = app.globaData.userInfo._id
     this.setData({userInfo : app.globaData.userInfo})
     wx.request({
