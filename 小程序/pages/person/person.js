@@ -65,8 +65,8 @@ Page({
           success: function (res) {
             var code = res.code; //返回code
             // console.log(code);
-            var appId = '';
-            var secret = '';
+            var appId = ''; //appID
+            var secret = ''; //密钥
             wx.request({
               url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + appId + '&secret=' + secret + '&js_code=' + code + '&grant_type=authorization_code',
               data: {},
